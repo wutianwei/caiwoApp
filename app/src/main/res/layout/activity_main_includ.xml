@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/home_kehuguanli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/kehuguanli" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_kehuguanli"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_size_15"
+            android:text="客户管理" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/home_qudaoguanli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/qudaoguanli" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_qudaoguanli"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_size_15"
+            android:text="渠道管理" />
+    </LinearLayout>
+
+    <!--<com.superluo.textbannerlibrary.TextBannerView-->
+        <!--android:id="@+id/tv_banner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="w"-->
+        <!--app:setDirection="bottom_to_top"-->
+        <!--app:setSingleLine="true"-->
+        <!--app:setTextColor="#fff" />-->
+</LinearLayout>

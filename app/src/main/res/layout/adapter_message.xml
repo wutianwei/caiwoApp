@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_55">
+
+
+    <TextView
+        android:id="@+id/message_unread_num"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="@dimen/space_size_25"
+        android:background="@drawable/point1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_size_8"
+        android:minWidth="16dp"
+        android:text="9"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_text_size_10"
+        android:visibility="visible" />
+    <ImageView
+        android:id="@+id/adapter_message_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_size_10"
+        android:src="@drawable/mine_img" />
+    <TextView
+        android:id="@+id/adapter_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="消息名称"
+        android:layout_marginLeft="@dimen/space_size_15"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/adapter_message_icon"
+        />
+    <TextView
+        android:id="@+id/adapter_message_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="5条未读消息"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:drawableRight="@drawable/fangxiang"
+        android:drawablePadding="@dimen/space_size_6"
+        />
+    </RelativeLayout>
+</RelativeLayout>

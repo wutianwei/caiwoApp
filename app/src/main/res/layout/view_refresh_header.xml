@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c4"
+    android:id="@+id/vieww_refresh_header_Rel"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_40"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_size_8" >
+
+        <LinearLayout
+            android:id="@+id/header_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/header_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9b9b9b"
+                android:text="正在刷新数据中"
+                android:textSize="@dimen/font_text_size_10" />
+
+            <TextView
+                android:id="@+id/header_hint_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_size_2"
+                android:layout_marginTop="@dimen/space_size_3"
+                android:minWidth="@dimen/space_size_50"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_text_size_10"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_size_5"
+            android:layout_toLeftOf="@+id/header_text_layout" >
+
+            <ImageView
+                android:id="@+id/vieww_refresh_header_arrow_Img"
+                android:layout_width="@dimen/space_size_20"
+                android:layout_height="@dimen/space_size_20"
+                android:layout_gravity="center"
+                android:src="@drawable/loading_img"
+              />
+        </FrameLayout>
+
+        <ProgressBar
+            android:id="@+id/vieww_refresh_header_Pb"
+            android:layout_width="@dimen/space_size_20"
+            android:layout_height="@dimen/space_size_20"
+            android:layout_marginRight="@dimen/space_size_5"
+            android:layout_toLeftOf="@+id/header_text_layout"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@anim/update_loading_progressbar_anim"
+            android:indeterminateDuration="700"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

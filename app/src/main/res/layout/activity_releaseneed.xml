@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_45"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginRight="@dimen/space_size_50"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/space_size_45"
+                android:layout_height="@dimen/space_size_45"
+                android:background="@drawable/red_ring"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#c50000"
+                android:textSize="@dimen/font_text_size_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fabu_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/space_size_45"
+                android:layout_height="@dimen/space_size_45"
+                android:background="@drawable/gree_ring"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#6c6c6c"
+                android:textSize="@dimen/font_text_size_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fabu_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="@dimen/space_size_45"
+                android:layout_height="@dimen/space_size_45"
+                android:background="@drawable/gree_ring"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#6c6c6c"
+                android:textSize="@dimen/font_text_size_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_size_20"
+        android:layout_marginTop="@dimen/space_size_15"
+        android:text="客户信息采集（您采集的信息越详细，成功的几率越大）"
+        android:textColor="#3c3c3c"
+        android:textSize="@dimen/font_text_size_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_0.5"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:background="#3c3c3c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginTop="@dimen/space_size_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_15"
+            android:text="客户姓名:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/font_text_size_15"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:hint="请输入真实的姓名" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_0.5"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginRight="@dimen/space_size_50"
+        android:background="#3c3c3c" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginTop="@dimen/space_size_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_15"
+            android:text="手机号:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/font_text_size_15"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:hint="请输入手机号" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_0.5"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginRight="@dimen/space_size_50"
+        android:background="#3c3c3c" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginTop="@dimen/space_size_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_15"
+            android:text="身份证号:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/font_text_size_15"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:hint="请输入身份证号" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_0.5"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginRight="@dimen/space_size_50"
+        android:background="#3c3c3c" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginTop="@dimen/space_size_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_15"
+            android:text="婚姻状况:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/font_text_size_15"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:hint="请选择婚姻状况" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_0.5"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginRight="@dimen/space_size_50"
+        android:background="#3c3c3c" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginTop="@dimen/space_size_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_15"
+            android:text="征信情况:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/font_text_size_15"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:hint="请选择征信情况" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_0.5"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginRight="@dimen/space_size_50"
+        android:background="#3c3c3c" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginTop="@dimen/space_size_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_15"
+            android:text="是否有官司:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/font_text_size_15"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:hint="请选择是否有官司" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_0.5"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginRight="@dimen/space_size_50"
+        android:background="#3c3c3c" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginTop="@dimen/space_size_20"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_15"
+            android:text="资金需求:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/font_text_size_15"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:hint="请输入金额" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_0.5"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_marginLeft="@dimen/space_size_50"
+        android:layout_marginRight="@dimen/space_size_50"
+        android:background="#3c3c3c" />
+</LinearLayout>

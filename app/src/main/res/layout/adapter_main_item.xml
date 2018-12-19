@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/adapter_main_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_size_13"
+        android:text="时间的显示"
+        android:layout_marginTop="@dimen/space_size_6"
+        android:textColor="#3c3c3c"
+        android:textSize="@dimen/font_text_size_14" />
+    <RelativeLayout
+        android:id="@+id/adapter_main_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/space_size_15"
+        android:layout_marginRight="@dimen/space_size_15"
+        android:layout_below="@+id/adapter_main_time"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/adapter_main_img"
+            android:layout_width="@dimen/space_size_60"
+            android:layout_height="@dimen/space_size_60"
+            android:src="@color/line"
+            />
+        <TextView
+            android:id="@+id/adapter_yewuleixing"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/adapter_main_img"
+            android:layout_marginLeft="@dimen/space_size_20"
+            android:layout_height="wrap_content"
+            android:text="业务类型: 房屋抵押"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_14" />
+        <TextView
+            android:id="@+id/adapter_edu"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/adapter_yewuleixing"
+            android:layout_marginLeft="@dimen/space_size_20"
+            android:layout_height="wrap_content"
+            android:text="额度: 100万"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_14" />
+        <TextView
+            android:id="@+id/adapter_diyawu"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/adapter_main_img"
+            android:layout_marginLeft="@dimen/space_size_20"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adapter_yewuleixing"
+            android:text="抵押物类型: 别墅"
+            android:textColor="#3c3c3c"
+            android:layout_marginTop="@dimen/space_size_15"
+            android:textSize="@dimen/font_text_size_14" />
+        <TextView
+            android:id="@+id/adapter_diyashunwei"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/adapter_yewuleixing"
+            android:layout_marginLeft="@dimen/space_size_20"
+            android:layout_height="wrap_content"
+            android:text="抵押顺位: 一低"
+            android:layout_marginTop="@dimen/space_size_15"
+            android:layout_below="@+id/adapter_yewuleixing"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/font_text_size_14" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/adapter_main_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/space_size_10"
+        android:layout_marginBottom="@dimen/space_size_10"
+        android:layout_marginRight="@dimen/space_size_15"
+        >
+        <TextView
+            android:id="@+id/adapter_genzong_state"
+            android:layout_width="@dimen/space_size_80"
+            android:layout_height="@dimen/space_size_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_size_13"
+            android:text="跟踪中"
+            android:gravity="center"
+            android:textColor="#3c3c3c"
+            android:background="@drawable/genzhong_state"
+            android:textSize="@dimen/font_text_size_14" />
+        <TextView
+            android:id="@+id/adapter_detail_state"
+            android:layout_width="@dimen/space_size_80"
+            android:layout_height="@dimen/space_size_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_size_13"
+            android:text="查看详情"
+            android:gravity="center"
+            android:textColor="#c50000"
+            android:background="@drawable/xiangqing_state"
+            android:textSize="@dimen/font_text_size_14" />
+    </LinearLayout>
+</RelativeLayout>

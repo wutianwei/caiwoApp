@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <TextView
+        android:id="@+id/item_popupwindows_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_size_40"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_size_10"
+        android:layout_marginLeft="@dimen/space_size_15"
+        android:layout_marginRight="@dimen/space_size_15"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_text_size_15" />
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/item_popupwindows_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_size_60"
+        android:layout_marginLeft="@dimen/space_size_15"
+        android:layout_marginRight="@dimen/space_size_15"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_popupwindows_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_size_35"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:layout_marginRight="@dimen/space_size_15"
+            android:layout_marginTop="@dimen/space_size_5"
+            android:layout_marginBottom="@dimen/space_size_5"
+            android:background="@null"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_text_size_15" />
+
+        <ImageView
+            android:id="@+id/popwindow_image_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c4"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/item_popupwindows_Photo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_size_35"
+            android:layout_marginBottom="@dimen/space_size_5"
+            android:layout_marginLeft="@dimen/space_size_15"
+            android:layout_marginRight="@dimen/space_size_15"
+            android:layout_marginTop="@dimen/space_size_5"
+            android:background="@null"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_text_size_15" />
+    </LinearLayout>
+
+</RelativeLayout>

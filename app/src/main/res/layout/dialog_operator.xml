@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/space_size_270"
+        android:layout_height="@dimen/space_size_160"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/round_white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_size_115"
+            android:orientation="vertical"
+            android:padding="@dimen/space_size_10" >
+
+            <TextView
+                android:id="@+id/tv_operator_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/font_text_size_16"
+                android:textStyle="bold"
+                android:textColor="@color/main_black"
+                android:layout_marginTop="@dimen/space_size_10" />
+
+            <TextView
+                android:id="@+id/tv_operator_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_size_10"
+                android:paddingLeft="@dimen/space_size_10"
+                android:paddingRight="@dimen/space_size_10"
+                android:textSize="@dimen/font_text_size_15"
+                android:textColor="@color/main_black"
+                android:layout_marginTop="@dimen/space_size_10" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_grey"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/space_size_270"
+            android:layout_height="@dimen/space_size_45"
+            >
+            <Button
+                android:id="@+id/cancle_Btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_size_45"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:text="取消"
+                android:textSize="@dimen/font_text_size_15"
+                android:textColor="@color/black"/>
+            <View
+                android:id="@+id/line_View"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_grey"/>
+            <Button
+                android:id="@+id/ok_Btn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/space_size_45"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:text="确定"
+                android:textSize="@dimen/font_text_size_15"
+                android:textColor="@color/main_color"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

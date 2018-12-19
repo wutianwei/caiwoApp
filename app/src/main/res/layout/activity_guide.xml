@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rongba="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:id="@+id/activity_base_layout_main">
+
+    <FrameLayout
+        android:id="@+id/photoFliperWraper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#faf6f4">
+        <com.caiwo.caiwoapp.customview.flowview.FlowView
+            android:id="@+id/photoFlow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            rongba:bufferSize="2"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_gravity="bottom">
+            <com.caiwo.caiwoapp.customview.flowview.CircleFlowIndicator
+                android:paddingBottom="10dip"
+                android:paddingTop="20dip"
+                android:paddingLeft="40dip"
+                android:paddingRight="60dip"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/photoIndicator"
+                android:layout_gravity="center_horizontal"
+                rongba:inactiveType="stroke"
+                rongba:radius ="5dip"
+                android:visibility="gone"
+                rongba:activeColor="#ffffff"
+                rongba:inactiveColor="#ffffff"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>
